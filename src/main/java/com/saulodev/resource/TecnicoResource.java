@@ -18,6 +18,7 @@ import com.saulodev.service.TecnicoService;
 @RestController
 @RequestMapping(value = "/tecnico")
 public class TecnicoResource {
+	
 	@Autowired
 	private TecnicoService service;
 	
@@ -42,6 +43,4 @@ public class TecnicoResource {
 	public Tecnico atulizarTecnico(@PathVariable Integer id, @RequestBody Tecnico tecnico) {
 		return service.updateTecnico(id, tecnico);
 	}
-	
-	
 }
