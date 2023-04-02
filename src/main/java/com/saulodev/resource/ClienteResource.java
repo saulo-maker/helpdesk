@@ -41,6 +41,6 @@ public class ClienteResource {
 	
 	@PutMapping(value = "{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Cliente atulizarTecnico(@PathVariable Integer id, @RequestBody Cliente cliente) {
-		return service.updateTecnico(id, cliente);
+		return service.updateCliente(id, cliente);
 	}
 }

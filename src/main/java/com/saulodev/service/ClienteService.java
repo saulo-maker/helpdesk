@@ -29,7 +29,7 @@ public class ClienteService {
 		return repository.save(cliente);
 	}
 	
-	public Cliente updateTecnico(@PathVariable Integer id, Cliente cliente) {
+	public Cliente updateCliente(@PathVariable Integer id, Cliente cliente) {
 		
 		Cliente clienteUpdate = repository.findById(id).orElseThrow();
 		
