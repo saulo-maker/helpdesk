@@ -17,7 +17,7 @@ import com.saulodev.domain.Cliente;
 import com.saulodev.service.ClienteService;
 
 @RestController
-@RequestMapping(value = "/tecnicos")
+@RequestMapping(value = "/cliente")
 public class ClienteResource {
 	@Autowired
 	private ClienteService service;

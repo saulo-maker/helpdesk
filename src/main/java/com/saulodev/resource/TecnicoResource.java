@@ -16,7 +16,7 @@ import com.saulodev.domain.Tecnico;
 import com.saulodev.service.TecnicoService;
 
 @RestController
-@RequestMapping(value = "/tecnicos")
+@RequestMapping(value = "/tecnico")
 public class TecnicoResource {
 	@Autowired
 	private TecnicoService service;
